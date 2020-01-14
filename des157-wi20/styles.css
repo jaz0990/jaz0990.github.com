@@ -1,0 +1,65 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+    color: #07154A;
+}
+#mySketch{
+    width: 800px;
+    height: 250px;
+    background-color: #9DB1FA;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    padding: 4em;
+    background-color: #FF9678;
+}
+main{
+    padding: 3em;
+}
+
+h1 h2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+}
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    color: #07154A;
+}
+li a:hover{
+    color: #468700;
+}
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+section{
+    padding: 1em;
+    background-color: #A3D66D
+}
+footer{
+    padding: 2em;
+    background-color: #FF9678;
+    text-align: center;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) { 
+    main{
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section{
+        width: 20%;
+    }
+}
+
+/*colors:
+dark blue:   #07154A
+peach:       #FF9678
+light blue:  #9DB1FA
+light green: #A3D66D
+dark green:  #468700
+
+*/
