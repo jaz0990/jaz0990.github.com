@@ -1,13 +1,14 @@
 body{
     font-family: 'Titillium Web', sans-serif;
-    color: #07154A;
+    color: #03353E;
 }
 img{
     margin: auto;
 }
 header{
     padding: 4em;
-    background-color: #FF9678;
+    background-color: #03353E;
+    color: rgb(199, 188, 179);
 }
 main{
     padding: 3em;
@@ -21,22 +22,22 @@ ul li a{
     list-style-type: none;
     text-decoration: none;
     text-align: center;
-    color: #07154A;
+    color: #04060F;
 }
 li a:hover{
-    color: #468700;
+    color: #C1403D;
 }
 p {
     font-family: 'Titillium Web', sans-serif;
 }
 section{
     padding: 1em;
-    background-color: #A3D66D;
+    color: #04060F;
     margin: auto;
 }
 footer{
     padding: 2em;
-    background-color: #FF9678;
+    background-color: #0294A5;
     text-align: center;
 }
 
@@ -54,10 +55,10 @@ footer{
 }
 
 /*colors:
-dark blue:   #07154A
-peach:       #FF9678
-light blue:  #9DB1FA
-light green: #A3D66D
-dark green:  #468700
+black:       #04060F
+Dark Blue:   #03353E
+sea blue:    #0294A5
+light brown:       color: rgb(199, 188, 179);
+red:         #C1403D
 
 */
