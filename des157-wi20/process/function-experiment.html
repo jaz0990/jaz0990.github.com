@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+       /*  This experimentation in JS asks for your favorite boba tea flavor, then it will list out the topping options. finally it will state that the random sale topping item.  
+       */
+    var bobaTea = prompt("What is your favorite boba tea flavor?");
+    var topping = ['cheese', 'jelly', 'pudding', 'boba'];
+    var myInteger = prompt("Please enter your sweetness, 1 being regular sweetness, less than one for less sweet", " ");
+
+    function drink(bobaTea){
+        console.log(`My favorite flavor is ${bobaTea}`)
+    }
+    drink(bobaTea);
+    
+   /*  function addOn(bobaTea, topping){
+        for(var i=0; i<topping.length; i++){
+            console.log(`Would you like some ${topping[i]} with your ${bobaTea}?`)
+        }
+    }
+    addOn(bobaTea, topping); */
+
+     function randomInt(min,max){
+        return Math.floor((max - min + 1)*Math.random())+min;
+    }
+
+    function sale(bobaTea,topping){
+        var randomTop = topping[randomInt(0, topping.length-1)];
+        console.log(`Today's topping special is actually ${randomTop}, do you want that?`);
+    }
+        sale(bobaTea, topping);
+
+        if(parseInt(myInteger)){
+            console.log("you want your drink really sweet");
+        }
+        else{console.log("you want your drink less sweet");}
+
+    </script>
+
+
+    
+</body>
+</html>
