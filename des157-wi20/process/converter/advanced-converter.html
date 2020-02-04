@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Distance Converter</title>
+
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Miles to Kilometers Converter</h1>
+    
+    <div class="container top">
+    	<p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+        
+        <form method="post" action="somephpfile.php" id="convert">
+        
+        	<input type="text" name="distance" id="distance" placeholder="distance">
+            <input type="submit" name="convertdist" value="Convert Distance">
+        
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+    	<h2 class="invisible">Answer goes here</h2>
+    </div>
+    
+    <p id="directions">Press the "K" key to switch to kilometer converstion, press the "M" key to switch to mile conversion</p>
+   
+   
+   
+   
+   <script>
+
+    /* formTag.addEventListener('submit', function(event){
+        event.preventDefault();
+        var myNum = parseInt(document.querySelector('input').value);
+        var km = `${myNum}` * 1.609344;
+        answer.innerHTML = `${myNum} miles converts to ${km} kilometers`;
+        if(myNum){
+            answer.style.color = "black";
+        }else{
+            alert('please enter a number');}
+    }); */
+    var answer = document.querySelector('h2');
+    var formTag = document.querySelector('form');
+    var intro = document.querySelector('p');
+
+    formTag.addEventListener('submit', function(event){
+        
+        event.preventDefault();
+        var myNum = parseInt(document.querySelector('input').value);
+        //not sure if this is how the keypressed function works? I was not able to get it to work. I think that's why I am stuck. 
+        //I am also not sure if it is the P tag that i will have to change to make the text different
+        var keyPressed = event.which;
+        if(keyPressed == '65'){
+            intro.innerHTML = `Convert miles to kilometers`;
+            var km = `${myNum}` * 1.609;
+        answer.innerHTML = `${myNum} miles converts to ${km} kilometers`;
+        } 
+        else if(keyPressed == "77"){
+            intro.innerHTML = `Convert kilometers to miles`;
+        var mi = `${myNum}` * 0.621;
+        answer.innerHTML = `${myNum} kilometers converts to ${mi} miles`;
+        }else{
+            alert('please enter a number');
+            }
+    });
+    
+
+</script>
+</body>
+</html>
