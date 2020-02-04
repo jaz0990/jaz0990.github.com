@@ -75,17 +75,14 @@
 		formTag.addEventListener('submit', function(event){
 			event.preventDefault();
 			var myNum = parseInt(document.querySelector('input').value);
-			var km = `${myNum}` * 1.609344;
+
+			var km = `${myNum}` * 1.61;
 			answer.innerHTML = `${myNum} miles converts to ${km} kilometers`;
 			if(myNum){
 				answer.style.color = "black";
 			}else{
 				alert('please enter a number');}
 		});
-
-
-
-
 
 
 	//prompt
