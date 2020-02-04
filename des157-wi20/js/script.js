@@ -6,12 +6,12 @@ color sooth = color ('173,203,227'); //lightblue
 color yeep = color ('42,77,105'); //pink
 color cloud = color ('231,239,246, 100'); */
 
-var dark = ('#293dce'); //dark red
-var redish = ('#293dce'); //red orange
-var orange = ('#447fe5'); //orange
-var sooth = ('#4bbff9'); //lightblue
-var yeep = ('#78e3e0'); //pink
-var cloud = ('#93f4ed');
+var dark = ('#6AABC1'); //dark red
+var redish = ('#BF3F3F'); //red orange
+var orange = ('#BF7373'); //orange
+var sooth = ('#043A40'); //lightblue
+var yeep = ('#BF7373'); //pink
+var cloud = ('#F2E9E4'); 
 
 
 function setup() {
