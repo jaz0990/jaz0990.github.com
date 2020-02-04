@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Miles to Kilometers Converter</title>
+	
+	<!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<h1>Miles to Kilometers Converter</h1>
+    
+    <div class="container top">
+    	<p>Type in a number of miles and click the button to convert the distance to kilometers.</p>
+        
+        <form method="post" action="somephpfile.php" id="convert">
+        
+        	<input type="text" name="distance" id="distance" placeholder="distance">
+            <input type="submit" name="convertdist" value="Convert Distance" id= "button">
+        
+        </form>
+    </div>
+    <div class="container bottom" id="answer">
+    	<h2 class="invisible">Answer goes here</h2>
+	</div>
+	
+	<script>
+
+
+
+		
+
+
+//enabling so thenn when you click convert, it doesn't bring you to another page, and only allows numbers in box
+//This green was my original thinking, but i found that i had to simplify it and put it under one event listener or else it didn't work
+		
+		/* 
+		formTag.addEventListener('submit', function(event){
+			event.preventDefault();
+			var myNum = parseInt(document.querySelector('input').value);
+			if(myNum){
+				answer.style.color = "black";
+			}else{
+				alert('please enter a number');
+			}
+		});
+
+		btn.addEventListener('submit', function(){
+			var myNum = parseInt(document.querySelector('input').value);
+			var km = `${myNum}` * 1.609344;
+			answer.innerHTML = `${myNum} miles converts to ${km} kilometers`;
+		});
+		formTag.addEventListener('submit', function(event){
+			event.preventDefault();
+			var myNum = parseInt(document.querySelector('input').value);
+			if(myNum){
+				answer.style.color = "black";
+			}else{
+				alert('please enter a number');
+			}
+		}); */
+
+		var answer = document.querySelector('h2');
+		var formTag = document.querySelector('form');
+
+		formTag.addEventListener('submit', function(event){
+			event.preventDefault();
+			var myNum = parseInt(document.querySelector('input').value);
+			var km = `${myNum}` * 1.609344;
+			answer.innerHTML = `${myNum} miles converts to ${km} kilometers`;
+			if(myNum){
+				answer.style.color = "black";
+			}else{
+				alert('please enter a number');}
+		});
+
+
+
+
+
+
+	//prompt
+	//put into user choice
+	//then run parsint
+	// i>0 & <5
+	//catch if its a letter
+	
+	</script>
+
+
+
+</body>
+</html>
