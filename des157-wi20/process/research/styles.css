@@ -1,6 +1,7 @@
 body{
     font-family: 'Titillium Web', sans-serif;
     color: #03353E;
+    background-color:rgb(235, 225, 217);
 }
 img{
     margin:auto;
@@ -15,9 +16,13 @@ main{
     padding: 3em;
 }
 
-h1 h2{
+h1{
+    color: rgb(224, 215, 207);
+}
+h2{
     font-family: 'Anton', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
+    color: #C1403D;
 }
 ul li a{
     list-style-type: none;

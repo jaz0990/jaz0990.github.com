@@ -1,7 +1,7 @@
 body{
     font-family: 'Titillium Web', sans-serif;
     color: #C1403D;
-    background-color: rgb(199, 188, 179);
+    background-color:rgb(235, 225, 217);
 }
 #mySketch{
     width: 800px;
@@ -13,7 +13,7 @@ header{
     margin: auto;
     padding: 1.4em;
     width: 800px;
-    background-color: #0294A5;
+    background-color: #03353E;
 }
 main{
     padding: 3em;
@@ -22,7 +22,10 @@ main{
     justify-content: space-between;
 }
 
-h1 h2{
+h1{
+    color: rgb(224, 215, 207);
+}
+h2{
     font-family: 'Anton', sans-serif;
     font-weight: 400;
 }
@@ -30,7 +33,7 @@ ul li a{
     list-style-type: none;
     text-decoration: none;
     text-align: center;
-    color: rgb(199, 188, 179);
+    color: #03353E;
 }
 li a:hover{
     color: #C1403D;
@@ -43,13 +46,13 @@ section{
     margin: 1em;
     width: 30%;
     display: inline-block;
-    background-color:#03353E;
+    background-color:rgb(199, 188, 179);
 }
 footer{
     padding: 2em;
     position: absolute;
     width: 100%;
-    background-color: #04060F;
+    background-color: #0294A5;
     text-align: center;
 }
 
