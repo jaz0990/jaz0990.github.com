@@ -1,53 +1,31 @@
-var x = 50;
-/* color dark = color ('99,172,229'); //dark red
-color redish = color ('99,172,229'); //red orange
-color orange = color ('75,134,180'); //orange
-color sooth = color ('173,203,227'); //lightblue
-color yeep = color ('42,77,105'); //pink
-color cloud = color ('231,239,246, 100'); */
+var kool = ('#6AABC1'); //shutters
+var kale = ('#BF3F3F'); //red orange
+var lily = ('#BF7373'); //sun
+var ali = ('#043A40'); //background
+var night = ('#F2E9E4'); //pink
+//var cloud = ('#F2E9E4'); 
+var dragX, dragY;
 
-var dark = ('#6AABC1'); //dark red
-var redish = ('#BF3F3F'); //red orange
-var orange = ('#BF7373'); //orange
-var sooth = ('#043A40'); //lightblue
-var yeep = ('#BF7373'); //pink
-var cloud = ('#F2E9E4'); 
-
-
-function setup() {
-  var myCanvas = createCanvas(800, 250);
-  fill(0);
-  noStroke();
-  myCanvas.parent(mySketch); //this is to stick into a div on the html page
- 
+function setup () {
+  var myCanvas = createCanvas (800,250);
+  background(night);
+  strokeWeight(20);
+  stroke(kool);
+  fill (lily);
+  ellipse(0,250,600,600);
+  myCanvas.parent(mySketch);
+}
+function draw () {
+  stroke(ali);
+  strokeWeight(10);
+  fill (night);
+  ellipse(dragX,dragY,80,80);
+}
+function mouseReleased() {
+  fill (kool);
+  rect (mouseX,mouseY,50,50);
 }
 
-function draw() {
-  background (sooth);
-  var scalar = map(mouseX, 10, width, 30,4);
-  var radius = 5.0;
-  for (var deg = 0; deg < 360*20; deg += scalar) {
-    var angle = radians(deg);
-    var x = 50 + (cos(angle)*radius);
-    var y = 42 + (sin(angle) *radius);
-    fill(orange);
-    noStroke();
-    ellipse(x+mouseX,y+mouseY,4,4);
-     ellipse(x+mouseX,y+mouseY,10,10);
-    radius = radius + 0.54;
-  }
-   ellipse(50+mouseX,42+mouseY, 100,100);
-  fill(cloud);
-   ellipse(200,300,300,70);
-   ellipse(270,250,250,150);
-   ellipse(350,300,200,100);
-   
-  for (var i = 0; i < 500; i += 10) {
-    stroke(i*.02);
-    stroke(dark);
-    strokeWeight(10);
-    fill(yeep);
-    line (i, 0, i*mouseX, 500);
-  }
 
-}
+
+  
