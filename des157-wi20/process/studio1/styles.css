@@ -1,0 +1,123 @@
+label, input{
+    display: block;
+    color: #0086ad;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    
+    
+}
+label{
+    margin-bottom: .35em;
+    
+}
+input{
+    margin-bottom: 20px;
+    background-color: #daf8e3;
+    border-radius: .5em;
+    border-style: solid;
+}
+
+fieldset, input, fieldset label {
+    display: inline;    
+}
+fieldset label {
+    margin-bottom: 20px;  
+}
+
+h1, h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #daf8e3;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #005582;
+    
+}
+div{
+    margin:auto;
+    color: #daf8e3;
+    font-size: 30px;
+    border-radius: 2em;
+}
+.everything{
+    display: flex;
+}
+
+body{
+    
+  background-color: #00c2c7;
+
+}
+header{
+    background-color:#0086ad;
+    padding: 2em;
+    text-align: center;
+}
+section{
+    background-color:#0086ad;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 2em;
+    border-radius: 2em;
+    width: 30%;
+    display: flex;   
+}
+#submit{
+    display: block;
+    color: #005582;
+    background-color: #97ebdb;
+    border-radius: .5em;
+    border-style: solid;
+}
+#submit:hover{
+    background-color: #00c2c7;
+}
+
+.answer{
+    text-align: center;
+    color: #005582;
+    padding: 2em;
+    width: 100%;
+}
+img{
+    max-width: 200px;
+    left: 100px;
+    display: block;
+}
+#drink{
+    background-color: #00c2c7 ;
+}
+
+input {display: block; margin-bottom: 20px;}
+        .invisible { display: none;}
+        .visible {
+            display: block;
+            position: absolute;
+            top: 250px;
+            margin: auto;
+            width: 500px;
+            padding: 20px;
+            color: #97ebdb;
+            background-color: #daf8e3;
+        }
+footer{
+    background-color: #97ebdb ;
+    padding: 2em;
+    color: #daf8e3;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* colors
+
+#daf8e3  yellow
+#97ebdb  light green
+#00c2c7  green
+#0086ad  blue
+#005582  dark blue
+
+*/

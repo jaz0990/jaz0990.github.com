@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7Eleven MadLibs</title>
+    <!--/ /-------- Normalize CSS --------/ /-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+	
+	<!--/ /-------- Google Fonts --------/ /-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald|PT+Sans&display=swap" rel="stylesheet">
+	
+	<!--/ /-------- My Styles --------/ /-->
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header> 
+    <h1>Find Your 7Eleven Milk</h1>
+    <h2>Hey There! 7Eleven has a TON of drinks (mostly in Asia... *cry for America*) Let's play a MadLib game to find YOUR special drink!</h2>
+    </header>
+
+    <div class="everything">
+        <section> 
+        <form id="myform">
+    
+                <input type="text" placeholder="vegetable" id="noun1">
+                <input type="text" placeholder="color" id="noun2">
+                <input type="text" placeholder="plural noun" id="adjective">
+                <input type="text" placeholder="day of the week" id="verb">
+                <input type="text" placeholder="random number" id="verb">
+
+                <input id="submit" type="submit" value="Find My Milk!">
+                
+        </form>
+        </section>
+        <section id= "drink">
+            <img src='images/drink.png'>
+        </section>
+    </div>
+
+    <div class="invisible" id="madlib">
+        <p>Madlib will go here! The class is set initially to invisible, which is set in the styles above to display: none. When the mad lib is submitted, this class is swapped. You could change the styling a lot. Add a css transition to have the mad lib fade in, or fly in or have some other effect.
+        </p>
+    </div>
+    <footer>
+        <a href="mailto:&#106;&#097;&#122;&#100;&#097;&#118;&#105;&#115;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">jazdavis@ucdavis.edu</a>
+        <a href="http://validator.w3.org/check?uri=referer">Valid HTML</a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
