@@ -26,7 +26,7 @@
 	//This function takes an array input, then constructs the madlib, peppering
 	//in the user's words where necessary.
 	function makeMadLib(theWords){
-		const madlib = `You should order ${theWords[0]} milk!  It’s the color ${theWords[1]}. It smells like ${theWords[2]} And on ${theWords[3]}, you get buy one get one free! Otherwise the drink will cost $${theWords[4]}!!! `;
+		const madlib = `You should get ${theWords[0]} milk!  It’s the color ${theWords[1]}. It smells like ${theWords[2]} And on ${theWords[3]}, you get buy one get one free! Otherwise the drink will cost $${theWords[4]}!!! `;
 
 		
 
