@@ -1,0 +1,117 @@
+body{
+    background-color: #ffefef;
+    font-family: 'Oswald', sans-serif;
+    color: #4194c4;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 10px;
+    border-color: #ffbcbc;
+    margin: 20px;
+    padding-top: 15px;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    
+}
+#sec2{
+    align-content: center;
+    background-color: #ffefef;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+img{
+    max-width: 300px;
+    height: 300px;
+}
+#img2{
+    height: 320px;
+}
+header{
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+h1 h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+    color: #daf8e3;
+}
+p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #005582;
+}
+footer{
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 17px 0px 17px 0px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    background-color: #ff8989;
+}
+
+.one{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition: all 2s;
+}
+.two{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    transition: all 2s;
+}
+.three{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    transition: all 2s;
+
+}
+.four{
+    width: 300px;
+    height: 24px;
+    background-color: white;
+    transition: all 2s;
+    bottom: 0;
+}
+
+#overlay p {
+    font-family: 'Arial';
+    position: absolute;
+    color:white;
+    text-align: center;
+  }
+  #overlay {
+    border-radius: 2em;
+    background-color: #4194c4;
+    transform: translate(-45%, -10%);
+    left: 20%;
+    top: 80%;
+    align-content: center;
+    position: absolute;
+    width: 30%;
+    height: 15%;
+    opacity: 1;
+    display: none;
+  }
+  #close {
+    position: absolute;
+    top: .2em;
+    right: 1em;
+    color: white;
+  }
