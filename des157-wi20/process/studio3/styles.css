@@ -1,0 +1,48 @@
+
+h1, p, div, ul, li, a {margin: 0; padding: 0;}
+
+body { 
+	padding: 30px 40px;
+	font-family: 'Teko';
+	font-weight: 300;
+    font-size: 120%;
+    background-color: #9ed29a;
+}
+
+h1 {
+	font-family: 'Teko';
+	font-weight: 600;
+    font-size: 150%;
+    color: #48534a;
+}
+
+div{
+    color: #009444;
+    margin: auto;
+}
+section{
+    padding: 2em;
+    width: 70%;
+    justify-content: center;
+    
+}
+button{
+    color:  #48534a;
+    background-color: #efc742;
+    border-style: solid;
+    border-color: #009444;
+    padding: .3em;
+    border-radius: .5em;
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px) { 
+    body{
+        display: flex;
+        justify-content: space-around;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    section{
+        width: 50%;
+    }
+}
