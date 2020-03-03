@@ -46,6 +46,11 @@ article{
     padding: 2em;
     margin: 2em;
 }
+img{
+    height: 400px;
+    width: auto;
+    margin: .3em;
+}
 
 footer{
     padding: 2em;
