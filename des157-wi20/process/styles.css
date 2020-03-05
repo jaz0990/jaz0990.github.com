@@ -27,6 +27,13 @@ button{
     border-style: solid;
     border-color: #ABEBC6;
     border-width: 5px;
+    margin: 2em;
+    padding: 10px 20px;
+}
+img{
+    margin: 0;
+    height: 190px;
+    width: auto;
 }
 .circle{
     height: 12em;
@@ -43,11 +50,6 @@ button{
 #timer{
     size: 50px;
     color: #20A286;
-}
-button{
-    margin: 2em;
-    padding: 10px 20px;
-
 }
 footer{
     position: fixed;
